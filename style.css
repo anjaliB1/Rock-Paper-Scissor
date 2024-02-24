@@ -1,0 +1,74 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #fff;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+.selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 5rem;
+    transition: .1s;
+}
+
+.selection:hover {
+    transform: scale(1.25);
+}
+
+.results {
+    margin-top: 3rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.result-score {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.result-selection {
+    font-size: 20px;
+    opacity: .5;
+}
+
+.result-selection.winner {
+    opacity: 1;
+    font-size: 35px;
+}
+
+#reloadButton {
+    cursor: pointer;
+    font-size: 17.5px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2.5px solid #ffb703;
+    transition: .5s;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+#reloadButton:hover {
+    background-color: #ffb703;
+    color: #fff;
+}
+
+#reloadButton:active {
+    box-shadow: 4px 3px #666;
+    transform: translateY(3px);
+}
